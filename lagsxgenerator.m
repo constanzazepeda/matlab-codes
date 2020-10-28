@@ -3,7 +3,7 @@ function [Y, X] = lagsxgenerator(W,p,cte)
 %X: Matriz de rezagos
 %Para incluir constante en Y2--> cte = 1
 %Para NO incluir constante en Y2--> cte = 0
-%Asume datos ordenados del m?s antiguo al m?s reciente. 
+%Asume datos ordenados del mas antiguo al mas reciente. 
 T=length(W);
 Y=W(p+1:T,1);
 X = ones((T-p),p);  
